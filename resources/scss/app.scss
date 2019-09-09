@@ -1,0 +1,88 @@
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Icons
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+@import 'header';
+@import 'login';
+@import 'table';
+@import 'form';
+@import 'pagination';
+@import 'detalle';
+
+html, body{
+    background-color: #F5F5F5;
+}
+
+.card{
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(43,43,43,0.1), 0 11px 6px -7px rgba(43,43,43,0.1);
+    box-shadow: 0 0 5px 0 rgba(43,43,43,0.1), 0 11px 6px -7px rgba(43,43,43,0.1);
+    border: none;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 20px;
+}
+
+button{
+    font-size: 0.8rem;
+    border-radius: 50px !important;
+    border: none !important;
+    .icon-right{
+      margin-left: 5px !important;
+      margin-right: 5px !important;
+    }
+}
+
+.alert{
+    font-size: 0.8rem;
+}
+
+.breadcrumb{
+    font-size: 0.8rem;
+}
+
+
+.card-category{
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    img{
+        height: auto;
+        width: 100%;
+        max-height: 190px;
+        min-height: 190px;
+        transform: scale(0.8);
+    }
+    p{
+        color: $secondary;
+    }
+}
+
+.card-product{
+    text-align: center;
+    font-size: 0.9rem;
+    
+    img{
+        height: auto;
+        width: 100%;
+        max-height: 190px;
+        min-height: 190px;
+        transform: scale(0.8);
+    }
+    p{
+        line-height: 1px;
+        text-align: left;
+    }
+    .name{
+        color: $secondary;
+        font-weight: bold;
+    }
+}
+
+

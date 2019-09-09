@@ -1,0 +1,28 @@
+.content-admin{
+    height: 40px !important;
+    background-color: #F5F5F5;
+    font-size: 0.8rem;
+}
+
+.navbar {
+    box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+    .navbar-brand {
+        width: 230px;
+        .logo-app {
+            width: 80%;
+        }
+    }
+    .nav-item{
+        margin: 10px;
+        font-size: 0.8rem;
+    }
+    .router-link-active{
+        border-bottom: 2px solid;
+    }
+    
+}
+
+.container{
+    margin-top: 30px;
+}
+

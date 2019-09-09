@@ -1,0 +1,116 @@
+#myTable_filter{
+    margin-bottom: 15px;
+}
+
+#myTable{
+    width: 100%;
+    border: 1px solid $gris_claro;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    thead{
+        background-color: $gris_claro;
+        text-transform: uppercase !important;
+        font-size: 0.6rem;
+        tr{
+            height: 40px;
+            th{
+                border-bottom: none;
+                padding-left: 10px;
+            }
+        }
+    }
+    
+    tbody{
+        .odd{
+            height: 40px;
+            td{
+                padding: 10px;
+            }
+        }
+        font-size: 0.7rem;
+        tr{
+            td{
+                padding: 5px 10px;
+                border-bottom: 1px solid #e6e6e6;
+            }
+            td:last-child {
+                width: 100px;
+            }
+        }
+        .btn-accion{
+            .btn.editar{
+                color: $secondary;
+            }
+            .btn.eliminar{
+                color: $danger;
+            } 
+        }
+    }
+
+    tfoot{
+        font-size: 0.9rem;
+        tr{
+            td{
+                padding: 5px 10px;
+                border-bottom: 1px solid #e6e6e6;
+            }
+            td:first-child{
+                text-align: end;
+            }
+        }
+    }
+    
+}
+
+.dataTables_filter{
+    input[type='search']{
+        border: 1px solid #ccc;
+        border-radius: 5px; 
+        background-color: #f5f5f5;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+}
+
+.dataTables_length{
+    select{
+        border: 1px solid #ccc;
+        border-radius: 5px; 
+        height: 30px;
+        background-color: #f5f5f5;
+        font-size: 0.7rem;
+    }
+}
+
+.table-categoria{
+    .active{
+        background-color: #389695;
+        color: white;
+    }
+}
+
+/* RESPONSIVE */
+@include media-breakpoint-down(sm) { 
+    #myTable{
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    #myTable{
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+  
+}
+
+@include media-breakpoint-down(xl) {
+
+}
+/* FIN RESPONSIVE */

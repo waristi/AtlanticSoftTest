@@ -1,0 +1,77 @@
+form{
+    .form-group{
+      label{
+        color: #616161;
+        font-weight: bold;
+        font-size: 0.6rem;
+      }
+      input{
+        font-size: 0.7rem;
+      }
+      input[type='text'], input[type='password'], input[type="number"],
+      input[type="date"] {
+        background-color: #f5f5f5;
+        border: none;
+        height: 40px;
+      }
+      input[type='text']:focus, input[type='text']:active,
+      input[type='password']:focus, input[type='password']:active,
+      input[type='number']:focus, input[type='number']:active,
+      input[type='date']:focus, input[type='date']:active
+      {
+        background-color: white;
+      }
+      select{
+        background-color: #f5f5f5;
+        border: none;
+        height: 40px !important;
+        font-size: 0.7rem;
+      }
+    }
+    button{
+      border-radius: 50px !important;
+      border: none !important;
+      i{
+        margin-right: 10px;
+      }
+      .icon-right{
+        margin-left: 10px !important;
+        margin-right: 0px !important;
+      }
+    }
+}
+
+.content-image{
+    width: 100%;
+    border: 1px solid #ccc;
+    min-height: 100px;
+    margin-top: 10px;
+    border-radius: 3px;
+    background-color: #fafafa;
+    p{
+      text-align: center;
+      padding: 40px;
+      color: #6c757d;
+    }
+    .panel{
+      .image{
+        padding: 10px !important;
+        display: inline-block;
+        .eliminar{
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background-color: red;
+          border-radius: 50%;
+          text-align: center;
+          color: white;
+          margin: 2px;
+        }
+        img{
+          margin-right: 10px;
+          border: 1px solid #ccc;
+        }
+      } 
+    }
+  }
+  
